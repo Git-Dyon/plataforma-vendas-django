@@ -1,0 +1,19 @@
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Arquivos de Mídia (Uploads) - MUITO IMPORTANTE
+# Não queremos subir os dados dos usuários para o repositório.
+media/
+
+# Modelos .pkl temporários que podem ser gerados na raiz
+*.pkl
+
+# Banco de dados (caso usássemos o sqlite de teste)
+*.sqlite3
+
+# Configurações de IDE (específicas do usuário)
+.vscode/
+
+# Arquivos de ambiente (se tivéssemos)
+.env
