@@ -4,7 +4,7 @@ services:
   # Serviço 1: Nossa aplicação Django
   app:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn backend.wsgi:application --bind 0.0.0.0:8000 --timeout 300
     volumes:
       - .:/app
       - media_data:/app/media # Monta o volume para arquivos de mídia
